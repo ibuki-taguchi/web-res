@@ -1,5 +1,2 @@
 # web-res
-
-aaaa
-aaaaaaaa
--aaa愛生
+ web research repo
