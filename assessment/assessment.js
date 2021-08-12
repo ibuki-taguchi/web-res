@@ -1,12 +1,27 @@
 "use strict";
+const userNameInput = document.getElementById("user-name");
+const assessmentButton = document.getElementById("assessment");
+const resultDivided = document.getElementById("result-area");
+const tweetDivided = document.getElementById("tweet-area");
 
-const x = 1;
-const y = 2;
+assessmentButton.onclick = () => {
+  console.log("button!!!");
+  const userName = userNameInput.value;
+  if (userName.length == 0) {
+    return;
+  }
+  // 子要素をリセット
+  resultDivided.innerText = "";
+  tweetDivided.innerText = "";
+  const header = document.createElement("h3");
+  header.innerText = "診断結果";
+  resultDivided.appendChild(header);
 
-let z;
-
-z = x + y;
-console.log(z);
+  const paragraph = document.createElement("p");
+  const result = assessment(userName);
+  paragraph.innerText = result;
+  resultDivided.appendChild(paragraph);
+};
 
 const answers = [
   "{userName}のいいところは声です。{userName}の特徴的な声は皆を惹きつけ、心に残ります。",
@@ -46,8 +61,9 @@ function assessment(userName) {
   return result;
 }
 
+// テスト
 console.assert(
   assessment("太郎") ===
-    "太郎のいいところは決断力です。郎がする決断にいつも助けられる人がいます。",
+    "太郎のいいところは決断力です。太郎がする決断にいつも助けられる人がいます。",
   "診断結果の文言の特定の部分を名前に置き換える処理が正しくありません。"
 );

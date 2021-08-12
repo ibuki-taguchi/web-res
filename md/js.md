@@ -76,10 +76,17 @@ vscodeでは、/**と入力してtabを押下するとテンプレ表示
 
  スプレッド構文
 
- console.assert＝テストできる
+ 無名関数：そこだけで使う使い捨ての関数みたいなイメージ
+ ```
+ function () {
 
-変数名のつけ方
-JavaScript | プロパティの値の取得と新しい値の代入 https://www.javadrive.jp/javascript/object/index3.html
-JavaScript | 関数から複数の値を呼び出し元へ返す https://www.javadrive.jp/javascript/function/index8.html
-JavaScript - JavaScript: const の配列の値が変えられるのはなぜ？｜teratail https://teratail.com/questions/121164
-JavaScriptで書く「let,var,const」の違い・使い分け | TechAcademyマガジン https://techacademy.jp/magazine/14872
+ }
+ ```
+ アロー関数
+ ```
+ () => {
+
+ }
+ ```
+
+ console.assert＝テストできる
