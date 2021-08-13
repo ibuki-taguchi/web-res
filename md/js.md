@@ -90,3 +90,9 @@ vscodeでは、/**と入力してtabを押下するとテンプレ表示
  ```
 
  console.assert＝テストできる
+
+cssも上から読まれる
+
+class属性は複数設定することが可能
+class="classA classB classC"
+classList.add

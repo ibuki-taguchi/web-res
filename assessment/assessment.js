@@ -4,6 +4,7 @@ const assessmentButton = document.getElementById("assessment");
 const resultDivided = document.getElementById("result-area");
 const tweetDivided = document.getElementById("tweet-area");
 
+// ボタンを押下したら動作
 assessmentButton.onclick = () => {
   console.log("button!!!");
   const userName = userNameInput.value;
@@ -13,14 +14,43 @@ assessmentButton.onclick = () => {
   // 子要素をリセット
   resultDivided.innerText = "";
   tweetDivided.innerText = "";
+
+  // 診断結果生成
+  const result = assessment(userName);
+
+  // 診断結果描画
   const header = document.createElement("h3");
   header.innerText = "診断結果";
   resultDivided.appendChild(header);
 
   const paragraph = document.createElement("p");
-  const result = assessment(userName);
   paragraph.innerText = result;
   resultDivided.appendChild(paragraph);
+
+  // Twitter
+  const anchor = document.createElement("a");
+  const hrefValue =
+    "https://twitter.com/intent/tweet?button_hashtag=" +
+    encodeURIComponent("あなたのいいところ") +
+    "&ref_src=twsrc%5Etfw";
+
+  anchor.setAttribute("href", hrefValue);
+  anchor.className = "twitter-hashtag-button";
+  anchor.setAttribute("data-text", result);
+  anchor.innerText = "Tweet #あなたのいいところ";
+
+  tweetDivided.appendChild(anchor);
+
+  const script = document.createElement("script");
+  script.setAttribute("src", "https://platform.twitter.com/widgets.js");
+  tweetDivided.appendChild(script);
+};
+
+// Enterを押したら動作
+userNameInput.onkeydown = (event) => {
+  if (event.key === "Enter") {
+    assessmentButton.onclick();
+  }
 };
 
 const answers = [
@@ -61,7 +91,7 @@ function assessment(userName) {
   return result;
 }
 
-// テスト
+// test
 console.assert(
   assessment("太郎") ===
     "太郎のいいところは決断力です。太郎がする決断にいつも助けられる人がいます。",

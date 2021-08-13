@@ -16,6 +16,12 @@ button {
   border-style: none;
 }
 
+.classB {
+  color: black;
+}
+.classA {
+  color: #fdff00;
+}
 input {
   height: 20px;
 }
