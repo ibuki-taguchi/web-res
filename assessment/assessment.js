@@ -13,7 +13,7 @@ assessmentButton.onclick = () => {
   }
   // 子要素をリセット
   resultDivided.innerText = "";
-  tweetDivided.innerText = "";
+  // tweetDivided.innerText = "";
 
   // 診断結果生成
   const result = assessment(userName);
@@ -45,7 +45,6 @@ assessmentButton.onclick = () => {
   script.setAttribute("src", "https://platform.twitter.com/widgets.js");
   tweetDivided.appendChild(script);
 };
-
 // Enterを押したら動作
 userNameInput.onkeydown = (event) => {
   if (event.key === "Enter") {

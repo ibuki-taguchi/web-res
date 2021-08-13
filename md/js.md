@@ -96,3 +96,7 @@ cssも上から読まれる
 class属性は複数設定することが可能
 class="classA classB classC"
 classList.add
+
+URI：インターネット上などにある情報やサービス（リソース）を識別するデータ形式
+→サーバなども含む？
+URL：インターネット上に限定したもの
