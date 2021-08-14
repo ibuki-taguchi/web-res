@@ -13,7 +13,7 @@ assessmentButton.onclick = () => {
   }
   // 子要素をリセット
   resultDivided.innerText = "";
-  // tweetDivided.innerText = "";
+  tweetDivided.innerText = "";
 
   // 診断結果生成
   const result = assessment(userName);
