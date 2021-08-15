@@ -26,6 +26,7 @@ assessmentButton.onclick = () => {
   const paragraph = document.createElement("p");
   paragraph.innerText = result;
   resultDivided.appendChild(paragraph);
+  //test
 
   // Twitter
   const anchor = document.createElement("a");
