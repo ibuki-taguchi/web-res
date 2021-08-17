@@ -104,3 +104,5 @@ URL：インターネット上に限定したもの
 再帰について
 
 true && false = false
+
+論理評価：truthyな値とfalsyな値
