@@ -7,28 +7,6 @@ JSからHTMLのid属性を操作する場合、先に読み込んでしまうと
 
 利用者が直接触れる部分：ユーザーインターフェース（UI）
 
-光の三原色：RGB
-１６進数カラーコード：RGBのそれぞれの強さを１６進数で表している
-
-黒：#000000
-白：#FFFFFF
-赤：#FF0000
-緑:#00FF00
-青：#0000FF
-黄色：#FFFF00
-
-margin：対象の外側の余白
-padding：対象の内側の余白
-
-![](img/js_2021-08-12-07-42-41.png)
-
-css
-id：#
-class：.
-
-vscode tips :　マルチカーソル
-ctrl + shift + ↓ or alt + shift + ドラッグ
-command + option ↓
 
 End
 command + →

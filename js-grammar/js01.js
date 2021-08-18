@@ -8,5 +8,9 @@ if (age <= 15) {
 } else if (member) {
   document.write("チケットの値段は1000円");
 } else {
+  let changeColor = document.getElementsByClassName("test");
+  console.log(changeColor[1]);
+  changeColor[0].style.color = "green";
+  changeColor[1].style.color = "green";
   document.write("チケットの値段は1800円");
 }
