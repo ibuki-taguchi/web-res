@@ -11,7 +11,7 @@ assessmentButton.onclick = () => {
   if (userName.length == 0) {
     return;
   }
-  // 子要素をリセット
+  // 子要素をリセットする
   resultDivided.innerText = "";
   tweetDivided.innerText = "";
 
@@ -26,6 +26,7 @@ assessmentButton.onclick = () => {
   const paragraph = document.createElement("p");
   paragraph.innerText = result;
   resultDivided.appendChild(paragraph);
+  //test
 
   // Twitter
   const anchor = document.createElement("a");
