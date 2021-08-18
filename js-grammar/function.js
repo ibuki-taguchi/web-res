@@ -14,3 +14,5 @@ function areaOfCircle(hankei) {
 }
 
 document.write(areaOfCircle(5));
+
+//
