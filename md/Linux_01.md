@@ -47,6 +47,7 @@
   - Windows OS上でLinuxの実行環境を実現するサブシステム。Linuxのプログラムからのシステムコール（APIやファイルアクセス要求など）をWindows APIに変換して、Linuxのバイナリ・プログラムを実行します。
 
   - 従来、PCにLinuxを実装すると、そのPCはLinux専用マシンになってしまい、Linux環境で作業をしながらWindows環境を利用したい場合は、別のPCが必要でした。WSLでは1台のPCでLinux環境とWindows環境を共有することができます。
+   ![](img/Linux_01_pic/WSL.png)
 
 - ホストOSからはDockerコンテナは一つのプロセスとして扱われる
 - コンソールからDocker Desktopのソフトウェアを操作しているイメージ
